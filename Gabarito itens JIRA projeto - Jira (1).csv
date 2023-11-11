@@ -1,0 +1,63 @@
+Resumo,Tipo de item,Prioridade,Descrição,Campo personalizado (Severidade),Parent summary
+Tela de aprovação de compra,História,Medium,"Eu, como usuário
+Gostaria, de ter uma tela informando de que o pedido foi aprovado
+Porque, assim eu terei certeza que meu pedido foi processado",média,Checkout
+Tela de Overview de compra,História,Medium,"Eu, como usuário
+Gostaria, de ter um tela com todas as informações da compra
+Porque, assim consigo validar produtos e as informações de pgamento",média,Checkout
+Formulário de endereço,História,Medium,"Eu, como usuário
+Gostaria de preencher meus dados de endereço
+Porque, assim consigo informar meu endereço para entrega",média,Checkout
+Checkout,Epic,Medium,"Eu, como usuário
+Gostaria, de uma tela para preencher meus dados
+Porque,assim inicio o processo de compra",Bloqueante,
+Checkout,História,Medium,"Eu, como usuário
+Gostaria, que tivesse um botão de checkout no carrinho
+Porque, assim consigo ir direto para a finalização das compras",Alta,Carrino
+Contador,História,Medium,"Eu, como usuário
+Gostaria , que fosse exibido um contador informando a quantidade de itens que se encontram no carrinho
+Porque, assim tenho controle de quantos itens estão nele",baixa,Carrino
+Compras no carrinho,História,Medium,"Eu, como usuário
+Gostaria de ao clicar no carrinho as comprar fossem exibidas
+Porque, assim consigo visualizar todos itens de compra",Bloqueante,Carrino
+Carrino,Epic,Medium,"Eu, como usuário
+Gostaria, de ao clicar no carrinho fosse redirecionado para a página dele
+Porque, assim consigo visualizar todos os itens desejados",Alta,
+Adicionar ao carrinho,História,Medium,"Eu, como usuário
+Gostaria de ao clicar no botão add to car o produto fosse adicionado ao meu carrinho
+Porque, assim consigo finalizar a compra do item",Bloqueante,Visualização dos produtos
+Exibir mais detalhes do produto,História,Medium,"Eu, como usuário
+Gostaria de ao clicar no item da home fosse redirecionado a página com todos os detalhes do produto
+Porque, assim consigo visualizar todos os detalhes do produto",Alta,Visualização dos produtos
+Detalhes do produto,História,Medium,"Eu, como usuário
+Gostaria, que fosse exibido uma foto, nome, descrição, preço e um botão de adicionar ao carrinho no item
+Porque, assim consigo ter uma prévia de informações e adicionar direto ao carrinho",Alta,Visualização dos produtos
+Visualização dos produtos,Epic,Medium,"Eu, como usuário
+Gostaria , que fosse exibido uma previa do produto na home
+Porque, assim consigo saber se desejo o produto",Alta,
+Exibir carrinho,História,Medium,"Eu, como usuário
+Gostaria, que fosse exibido o carrinho
+E, a quantidade de itens nele
+Porque, assim tenho controle dos itens que estou comprando",média,Home
+Exibir filtros,História,Medium,"Eu, como usuário
+Gostaria de um filtro
+Porque, assim eu filtro os itens que se encontram no site",média,Home
+Exibir produtos,História,High,"Eu, como usuário
+Gostaria, que os produtos fossem disponilidados na home
+Porque, assim visualizo os produtos disponiveis para compra",Bloqueante,Home
+Exibir menu,História,Medium,"Eu, como usuário
+Gostaria, que tivesse um menu
+Porque, assim consigo navegar na aplicação",média,Home
+Home,Epic,Medium,"Eu, como usuário
+Gostaria, que a home apresentasse os produtos
+Porque, assim consigo visualizar os produtos disponíveis para compra",,
+Login com usuário bloqueado,História,Medium,"Eu, como usuário
+Gostaria, que fosse exibida uma mensagem quando ocorrer problema no login
+Porque, assim consigo saber qual foi o erro",Alta,Login
+Login com sucesso,História,Highest,"Eu, como usuário
+Gostaria, de logar na aplicação
+E, sendo com login e senha
+Porque, assim consigo realizar as compras",Bloqueante,Login
+Login,Epic,Highest,"Eu, como usuário
+Gostaria, de logar na aplicação
+Porque, consigo realizar as minhas compras",Bloqueante,
