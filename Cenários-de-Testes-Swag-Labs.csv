@@ -1,0 +1,88 @@
+"Nome","CT","Prioridade","Severidade",Tipo de Item
+"Tela de login","DADO que me encontro no navegador
+QUANDO acesso o site
+ENTÃO a tela de login deve ser exibida
+E conter campo para adicionar usuáro e senha
+E um botão de login","High","Bloqueante",Test
+"login correto","DADO que me encontro no site
+E adiciono standard_user 
+E a senha secret_sauce
+QUANDO clico em logar
+ENTÃO sou redirecionando para o Home da aplicação","Medium","média",Test
+"Login com usuário bloqueado","DADO que me encontro no site
+E adiciono locked_out_user
+E a senha secret_sauce
+QUANDO clico em logar
+ENTÃO não deve ser redirecionado a home 
+E a mensagem de usuário bloquedo deve ser exibida","Medium","Alta",Test
+"Validação do menu","DADO que estou logado 
+QUANDO clico no menu
+ENTÃO deve ser exibido as três opções
+- All itens
+- About
+- Logout","Medium","média",Test
+"Validar fechar menu","DADO que estou logado 
+E clico no menu
+QUANDO clico no ""X""
+ENTÃO o menu deve ser fechado","low","baixa",Test
+"Validar fechar menu com clique","DADO que estou logado 
+E clico no menu
+QUANDO clico em qualquer lugar fora do menu
+ENTÃO não deve ser fechado o menu","low","baixa",Test
+"Validar redirecionamento para todos os itens","DADO que estou em uma tela diferente da home
+E clico no menu
+QUANDO clico em All Itens
+ENTÃO sou redirecionado para a home","low","baixa",Test
+"Validar acessar sobre","DADO que estou na aplicação
+E clico no menu
+QUANDO clico em Sobre
+ENTÃO devo ser redirecionada para a empresa que criou o site","low","baixa",Test
+"Validar logout","DADO que estou na aplicação
+E clico no menu
+QUANDO clico em Logout
+ENTÃO sou deslogada da aplicação
+E redirecionada para a tela de login","Medium","média",Test
+"Validar botão adicionar ao carrinho","DADO que estou na aplicação
+E visualizo o item desejado
+QUANDO clico em ""add cart""
+ENTÃO o item foi adicionado ao carrinho
+E o contador de itens foi somado em +1","High","Bloqueante",Test
+"Validar visualização item desejado","DADO que estou na aplicação
+E visualizo o item desejado
+QUANDO clico no item
+ENTÃO a tela do item deve ser exibida","Medium","média",Test
+"Validar add card dentro da tela de produto","DADO que me encontro na tela do produto
+QUANDO clico em ""add cart""
+ENTÃO o item foi adicionado ao carrinho
+E o contador de itens foi somado em +1
+E o botão de ""remove"" deve ser exibido","Medium","média",Test
+"Validar itens adicionado carrinho","DADO que o(s) iten(s) foram adicionados
+QUANDO clico no carrinho
+ENTÃO o carrinho deve conter o(s) iten(s) adicionado(s)
+E o contador deve corresponder a quantidade de itens ","High","Bloqueante",Test
+"Validar remoção de itens carrinho","DADO que estou no carrinho
+E visualizo o(s) item(s) adicionado ao carrinho
+QUANDO clico em ""remove""
+ENTÃO o item foi removido do carrinho
+E o contador de itens foi descrecido em -1","High","Bloqueante",Test
+"Validar redirecionamento pagina item","DADO que estou na aplicação
+E visualizo o item que foi adicionado ao carrinho
+QUANDO clico no item
+""ENTÃO a tela do item deve ser exibida
+E o botão de remover deve estar na tela""","High","Bloqueante",Test
+"Validar remoção de itens no contador","DADO que me encontro na tela do produto
+QUANDO clico em ""remove""
+ENTÃO o item foi removido do carrinho
+E o contador de itens foi descrecido em -1","Medium","média",Test
+"Validar carrinho após remoção de item","DADO que o(s) iten(s) foram removidos
+QUANDO clico no carrinho
+ENTÃO o carrinho deve conter apenas o(s) iten(s) adicionado(s)
+E o(s) iten(s) removidos não devem ser exibidos no carrinho
+E o contador deve corresponder a quantidade de itens 
+","High","Bloqueante",Test
+"Validar exibição de filtros","DADO que me encontro na home
+QUANDO clico em filtro
+ENTÃO deve ser exibido as opções de filtros","low","média",Test
+"Validar aplicação do filtro na busca","DADO que estou em filtro
+QUANDO seleciono uma opção de filtro
+ENTÃO os itens exibidos na tela devem ser ordenados de acordo com o filtro informado","low","média",Test
